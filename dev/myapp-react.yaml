@@ -31,7 +31,7 @@ spec:
     - port: 80
       targetPort: 3000
       protocol: TCP
-      nodePort: 31000
+      nodePort: 33000
   selector:
     app: myapp
 
