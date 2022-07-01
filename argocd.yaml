@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Aplication
+metadata:
+  name: myapp-argo-application
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://git.codechem.com/aleksandrazografska/k8s.git
+    targetRevision: HEAD
+  destination: 
+    server: https://kubernetes.default.svc
+    namespace: myapp
+    
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+
+    automated:
+      selfHeal: true
+      prune: true
+
