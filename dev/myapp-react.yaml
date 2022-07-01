@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: zografska/k8s-project:2.0
+        image: zografska/k8s-project
         ports:
         - containerPort: 3000
       restartPolicy: Always
