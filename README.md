@@ -1,3 +1,5 @@
-# k8s
+# k9s
 
-K8s project for fax subject CI/CD
+K9s is a kubernetes project for CI/CD uni class
+
+- Using Argo for continuous integration of a React application contained in `zografska/k8s-project`
